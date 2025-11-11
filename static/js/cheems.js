@@ -15,7 +15,13 @@ imagenes.forEach((img , index)=> {
     img.addEventListener("click", ()=>{
         if(id==randomNumber){
             img.src= window.IMG_BAD
-            alert("PERDISTE");
+
+                imagenes.forEach((img)=>{
+                    if (img.dataset.id != randomNumber){
+                        img.src=window.IMG_OK
+                    }
+                })
+               
         }else {
             img.src= window.IMG_OK
             alert("GANASTEEEEEE");
