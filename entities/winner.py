@@ -13,3 +13,4 @@ class Winner:
         #consulta parametrizados
         query= "INSERT INTO winners(name, email) VALUES(%s, %s)"
         cursor.execute(query,(self.name, self.email))
+        #kfkkfd
